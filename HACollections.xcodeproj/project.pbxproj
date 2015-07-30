@@ -11,6 +11,7 @@
 		9FC3F91C1B6A3E04007C8F96 /* HACollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC3F91B1B6A3E04007C8F96 /* HACollections.m */; };
 		9FC3F9221B6A3E04007C8F96 /* libHACollections.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC3F9161B6A3E04007C8F96 /* libHACollections.a */; };
 		9FC3F9361B6A3E5D007C8F96 /* HAQuicksort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC3F9331B6A3E5D007C8F96 /* HAQuicksort.m */; };
+		9FDEEA351B6A40CA00D02F4B /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDEEA341B6A40CA00D02F4B /* BubbleSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		9FC3F9331B6A3E5D007C8F96 /* HAQuicksort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAQuicksort.m; path = HACollections/HAQuicksort.m; sourceTree = "<group>"; };
 		9FC3F9341B6A3E5D007C8F96 /* HASortable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HASortable.h; path = HACollections/HASortable.h; sourceTree = "<group>"; };
 		9FC3F9351B6A3E5D007C8F96 /* HASorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HASorter.h; path = HACollections/HASorter.h; sourceTree = "<group>"; };
+		9FDEEA331B6A40CA00D02F4B /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BubbleSort.h; path = HACollections/BubbleSort.h; sourceTree = "<group>"; };
+		9FDEEA341B6A40CA00D02F4B /* BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BubbleSort.m; path = HACollections/BubbleSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 			children = (
 				9FC3F9321B6A3E5D007C8F96 /* HAQuicksort.h */,
 				9FC3F9331B6A3E5D007C8F96 /* HAQuicksort.m */,
+				9FDEEA331B6A40CA00D02F4B /* BubbleSort.h */,
+				9FDEEA341B6A40CA00D02F4B /* BubbleSort.m */,
 			);
 			name = Algorithms;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			files = (
 				9FC3F9361B6A3E5D007C8F96 /* HAQuicksort.m in Sources */,
 				9FC3F91C1B6A3E04007C8F96 /* HACollections.m in Sources */,
+				9FDEEA351B6A40CA00D02F4B /* BubbleSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +394,7 @@
 				9FC3F92C1B6A3E04007C8F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FC3F92D1B6A3E04007C8F96 /* Build configuration list for PBXNativeTarget "HACollectionsTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +403,7 @@
 				9FC3F92F1B6A3E04007C8F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
