@@ -1,5 +1,5 @@
 //
-//  Collections.h
+//  HASorter.h
 //  Collections
 //
 //  Created by Hasan Adil on 7/30/15.
@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HAQuicksort.h"
 
-@interface HACollections : NSObject
+@protocol HASorter <NSObject>
+
+-(NSArray*) sortedArrayFromArray:(NSArray*)unsortedArray;
 
 @end

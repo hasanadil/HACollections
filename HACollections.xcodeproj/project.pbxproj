@@ -10,6 +10,7 @@
 		9FC3F91A1B6A3E04007C8F96 /* HACollections.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9FC3F9191B6A3E04007C8F96 /* HACollections.h */; };
 		9FC3F91C1B6A3E04007C8F96 /* HACollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC3F91B1B6A3E04007C8F96 /* HACollections.m */; };
 		9FC3F9221B6A3E04007C8F96 /* libHACollections.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC3F9161B6A3E04007C8F96 /* libHACollections.a */; };
+		9FC3F9361B6A3E5D007C8F96 /* HAQuicksort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC3F9331B6A3E5D007C8F96 /* HAQuicksort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,10 @@
 		9FC3F91B1B6A3E04007C8F96 /* HACollections.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HACollections.m; sourceTree = "<group>"; };
 		9FC3F9211B6A3E04007C8F96 /* HACollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HACollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC3F9271B6A3E04007C8F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC3F9321B6A3E5D007C8F96 /* HAQuicksort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAQuicksort.h; path = HACollections/HAQuicksort.h; sourceTree = "<group>"; };
+		9FC3F9331B6A3E5D007C8F96 /* HAQuicksort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAQuicksort.m; path = HACollections/HAQuicksort.m; sourceTree = "<group>"; };
+		9FC3F9341B6A3E5D007C8F96 /* HASortable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HASortable.h; path = HACollections/HASortable.h; sourceTree = "<group>"; };
+		9FC3F9351B6A3E5D007C8F96 /* HASorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HASorter.h; path = HACollections/HASorter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 		9FC3F90D1B6A3E04007C8F96 = {
 			isa = PBXGroup;
 			children = (
+				9FC3F9301B6A3E0C007C8F96 /* Sorting */,
 				9FC3F9181B6A3E04007C8F96 /* HACollections */,
 				9FC3F9251B6A3E04007C8F96 /* HACollectionsTests */,
 				9FC3F9171B6A3E04007C8F96 /* Products */,
@@ -103,6 +109,25 @@
 				9FC3F9271B6A3E04007C8F96 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FC3F9301B6A3E0C007C8F96 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				9FC3F9311B6A3E15007C8F96 /* Algorithms */,
+				9FC3F9341B6A3E5D007C8F96 /* HASortable.h */,
+				9FC3F9351B6A3E5D007C8F96 /* HASorter.h */,
+			);
+			name = Sorting;
+			sourceTree = "<group>";
+		};
+		9FC3F9311B6A3E15007C8F96 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				9FC3F9321B6A3E5D007C8F96 /* HAQuicksort.h */,
+				9FC3F9331B6A3E5D007C8F96 /* HAQuicksort.m */,
+			);
+			name = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC3F9361B6A3E5D007C8F96 /* HAQuicksort.m in Sources */,
 				9FC3F91C1B6A3E04007C8F96 /* HACollections.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
